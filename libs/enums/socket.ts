@@ -1,4 +1,4 @@
 enum SocketEnum {
-  id = "ws://localhost:3005",
+  id = "wss://horse-socket.catcolor.live",
 }
 export default SocketEnum;
