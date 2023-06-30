@@ -72,7 +72,9 @@ export default function BetInputs({
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-5 w-full lg:w-2/3 ">
+      <div
+        style={{ display: 'none' }}
+        className="flex flex-col items-center justify-center gap-5 w-full lg:w-2/3 ">
         {/* //? Input amount manuel */}
         <div className="flex items-center w-full md:w-1/2 relative">
           <div className="absolute left-5 z-10">
@@ -98,7 +100,7 @@ export default function BetInputs({
         </div>
         {/* //? Miktar Selector Buttons */}
         <div className="grid grid-cols-4 content-center md:flex w-full gap-3 items-center justify-center text-white">
-          <button
+          {/* <button
             onClick={() => {
               setBetAmount(betAmount + 1);
             }}
@@ -137,7 +139,7 @@ export default function BetInputs({
             className="btn btn-circle bg-[url(/cion.webp)] bg-contain bg-center bg-no-repeat text-black border">
             {' '}
             +100{' '}
-          </button>
+          </button> */}
           <button
             onClick={() => {
               setBetAmount(betAmount + 200);
@@ -146,7 +148,7 @@ export default function BetInputs({
             {' '}
             +200{' '}
           </button>
-          <button
+          {/* <button
             onClick={() => {
               setBetAmount(betAmount * 2);
             }}
@@ -161,8 +163,8 @@ export default function BetInputs({
             className="btn btn-circle bg-[url(/cion.webp)] bg-contain bg-center bg-no-repeat text-black border">
             {' '}
             /2{' '}
-          </button>
-          {user && (
+          </button> */}
+          {/* {user && (
             <button
               onClick={() => {
                 setBetAmount(user?.deposit - 0.00001);
@@ -171,7 +173,7 @@ export default function BetInputs({
               {' '}
               Max{' '}
             </button>
-          )}
+          )} */}
         </div>
         {/* //? Horse Select Buttons */}
         <div className="flex flex-col md:flex-row items-center justify-center w-full md:justify-around gap-3">
