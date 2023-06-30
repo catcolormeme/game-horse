@@ -56,7 +56,8 @@ export default async function handler(
       pass1,
       pass2,
       userToken,
-      walletAddress
+      walletAddress,
+      1000,
     );
     if (!user) {
       res.status(400).json({ status: false, message: "Action Failed" });

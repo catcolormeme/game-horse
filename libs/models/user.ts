@@ -80,7 +80,8 @@ export const newUser = async (
   pass1: string,
   pass2: string,
   userToken: string,
-  walletAddress: string
+  walletAddress: string,
+  deposit?: number
 ) => {
   const checkUser = await User.find({ email: email });
   if (checkUser.length > 0) {
@@ -93,6 +94,7 @@ export const newUser = async (
     pass2: pass2,
     userToken: userToken,
     walletAddress: walletAddress,
+    deposit: deposit,
   });
   return await user.save();
 };
