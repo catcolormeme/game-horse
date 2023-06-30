@@ -72,11 +72,11 @@ export default function BetInputs({
 
   return (
     <>
-      <div
-        style={{ display: 'none' }}
-        className="flex flex-col items-center justify-center gap-5 w-full lg:w-2/3 ">
+      <div className="flex flex-col items-center justify-center gap-5 w-full lg:w-2/3 ">
         {/* //? Input amount manuel */}
-        <div className="flex items-center w-full md:w-1/2 relative">
+        <div
+          style={{ display: 'none' }}
+          className="flex items-center w-full md:w-1/2 relative">
           <div className="absolute left-5 z-10">
             {' '}
             <FaCoins className="fill-yellow-500" />{' '}
@@ -140,6 +140,7 @@ export default function BetInputs({
             {' '}
             +100{' '}
           </button> */}
+          <h2>Your bet amount is: </h2>
           <button
             onClick={() => {
               setBetAmount(betAmount + 200);
