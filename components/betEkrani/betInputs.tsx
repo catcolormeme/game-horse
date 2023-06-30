@@ -15,7 +15,7 @@ export default function BetInputs({
 }: any) {
   const [user, setUser] = useState<IUser>();
   const [secilenAt, setSecilenAt] = useState<any>(null);
-  const [betAmount, setBetAmount] = useState<any>(0);
+  const [betAmount, setBetAmount] = useState<any>(200);
 
   const getUser = async () => {
     const inputs = {
