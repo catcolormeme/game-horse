@@ -143,7 +143,8 @@ export default function BetInputs({
           <h2>Your bet amount is: </h2>
           <button
             onClick={() => {
-              setBetAmount(betAmount + 200);
+              setBetAmount(betAmount);
+              // setBetAmount(betAmount + 200);
             }}
             className="btn btn-circle bg-[url(/cion.webp)] bg-contain bg-center bg-no-repeat text-black border">
             {' '}
